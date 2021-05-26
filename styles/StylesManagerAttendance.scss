@@ -175,9 +175,9 @@ ul li a.inactive {
     width: 100%;
   }
 
-  .clock{
+  .clock {
     font-size: 15px;
-}
+  }
 }
 
 @media screen and (max-width: 280px) {
@@ -205,7 +205,7 @@ ul li a.inactive {
     margin-top: 5px;
     margin-bottom: -3px;
   }
-  
+
   .absen .name {
     padding-left: 10px;
     font-size: 12px;
@@ -232,8 +232,8 @@ ul li a.inactive {
     width: 100%;
   }
 
-  .clock{
-      font-size: 15px;
+  .clock {
+    font-size: 15px;
   }
 
   ul li a {
@@ -315,22 +315,22 @@ ul li a.inactive {
 }
 
 .button-decline {
-    position: relative;
-    background-color: #ffa3a3;
-    border: none;
-    font-size: 14px;
-    text-transform: uppercase;
-    border-radius: 30px;
-    color: #ffffff;
-    padding: 10px;
-    width: 100px;
-    text-align: center;
-    overflow: hidden;
-    cursor: pointer;
-    opacity: 0.6;
-    transition: 0.4s;
-    display: inline-block;
-  }
+  position: relative;
+  background-color: #ffa3a3;
+  border: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  color: #ffffff;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.4s;
+  display: inline-block;
+}
 
 .button-decline:hover {
   opacity: 1;
