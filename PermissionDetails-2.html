@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simasab</title>
-    <link rel="stylesheet" href="styles/StylesManagerPermission.css" />
+    <link rel="stylesheet" href="styles/StylesPermissionDetail-2.css" />
   </head>
   <body>
     <div class="content">
@@ -70,7 +70,9 @@
           <li>
             <a href="ManagerAttendance.html" class="inactive">attendance</a>
           </li>
-          <li><a href="ManagerPermission.html">permission</a></li>
+          <li>
+            <a href="ManagerPermission.html" class="active">permission</a>
+          </li>
         </ul>
         <script>
           const currentLocation = location.href;
@@ -84,23 +86,25 @@
         </script>
       </div>
 
-      <a href="PermissionDetails-1.html" class="permission-banners-1">
+      <a href="ManagerPermission.html" class="permission-banners-1">
         <div class="banner-1">
-          <span class="name">Robert Downey</span>
-          <span class="date-banner">23 April 2021</span>
-          <br />
-          <span class="permission-title">Izin Mengantar Orang Tua</span>
-        </div>
-      </a>
-
-      <a href="PermissionDetails-2.html" class="permission-banners-2">
-        <div class="banner-2">
           <span class="name">Siska</span>
-          <span class="date-banner">23 April 2021</span>
           <br />
           <span class="permission-title">Izin Sakit</span>
+          <br /><br />
+          <span class="title-date">Tanggal Izin</span><br />
+
+          <span class="permission-date">22 April 2021</span><br /><br />
+          <span class="note">Note</span><br />
+          <span class="reason">Saya izin kepala saya pusing </span>
         </div>
       </a>
+      <br />
+      <div class="Detail-button">
+        <br />
+        <button class="button-accept">accept</button>
+        <button class="button-decline">decline</button>
+      </div>
     </div>
   </body>
 </html>
