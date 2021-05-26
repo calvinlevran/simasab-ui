@@ -1,0 +1,147 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8e8e8;
+  font: 100% Helvetica, sans-serif;
+}
+
+.header-app {
+  background-color: #EC6267;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.header-app .jam {
+  margin-left: 10px;
+}
+
+.header-app .signal {
+  width: 15px;
+  float: right;
+  margin-right: 5px;
+  margin-top: 1px;
+}
+
+.header-app .wifi {
+  width: 15px;
+  float: right;
+  margin-right: 5px;
+  margin-top: 1px;
+}
+
+.header-app .battery {
+  width: 15px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 1px;
+}
+
+.profile {
+  background-color: #F8E8E8;
+  padding: 10px;
+}
+
+.profile .profilePhoto {
+  width: 200px;
+}
+
+.profile .name {
+  font-size: 40px;
+  margin-top: -1px;
+  margin-bottom: -2px;
+  text-shadow: 1px 1px 4px grey;
+}
+
+.profile .position {
+  margin-top: 2px;
+  margin-bottom: -2px;
+  font-size: 12px;
+  text-shadow: 1px 1px 4px grey;
+  font-size: 25px;
+}
+
+.profile .dateTime {
+  font-size: 30px;
+  margin-top: 5px;
+  margin-bottom: -3px;
+}
+
+ul {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+ul li a.active {
+  background: #EC6267;
+  color: black;
+  border-radius: 10px;
+}
+
+ul li a.inactive {
+  background: #FFBCBE;
+  color: black;
+  border-radius: 10px;
+}
+
+.calendar .month {
+  margin-top: 50px;
+  margin-left: 650px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+}
+
+.calendar .monthdays {
+  margin-left: 580px;
+}
+
+.apply {
+  background: #D9DDDC;
+  color: black;
+  border-radius: 5px;
+  margin-left: 640px;
+  margin-top: 20px;
+}
+
+.permission {
+  margin-top: 50px;
+}
+
+.permission .title {
+  margin-left: 580px;
+}
+
+.permission .notes {
+  margin-left: 580px;
+}
+/*# sourceMappingURL=employee_permission.css.map */

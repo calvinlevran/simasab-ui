@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simasab</title>
+    <link rel="stylesheet" href="styles/employee_permission.css" />
+  </head>
+  <body>
+    <div class="content">
+      <header class="header-app">
+        <span class="jam">09:41</span>
+        <!-- <script>
+          var time = new Date();
+          document.getElementById("jam").innerHTML = time.toLocaleTimeString();
+        </script> -->
+        <img src="img/battery-status.png" alt="" class="battery" />
+        <img src="img/wifi.png" alt="" class="wifi" />
+        <img src="img/signal.png" alt="" class="signal" />
+      </header>
+
+      <div class="profile">
+        <img src="img/robert.png" alt="" class="profilePhoto" />
+        <p class="name">Robert Downey</p>
+        <p class="position">Employee</p>
+        <p class="dateTime"><span id="tanggalwaktu"></span></p>
+        <script>
+          var date = new Date();
+          var tahun = date.getFullYear();
+          var hari = date.getDay();
+          var bulan = date.getMonth();
+          var tanggal = date.getDate();
+          var hariarray = new Array(
+            "Sunday,",
+            "Monday,",
+            "Tuesday,",
+            "Wednesday,",
+            "Thursday,",
+            "Friday,",
+            "Saturday,"
+          );
+          var bulanarray = new Array(
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+          );
+          document.getElementById("tanggalwaktu").innerHTML =
+            hariarray[hari] +
+            " " +
+            tanggal +
+            " " +
+            bulanarray[bulan] +
+            " " +
+            tahun;
+        </script>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li><a href="Employee_Attendance.html" class="inactive">attendance</a></li>
+          <li><a href="Employee_Permission.html" class="active">permission</a></li>
+        </ul>
+        <script>
+          const currentLocation = location.href;
+          const menuItem = document.querySelectorAll("a");
+          const menuLength = menuItem.length;
+          for (let i = 0; i < menuLength; i++) {
+            if (menuItem[i].href === currentLocation) {
+              menuItem[i].className = "active";
+            }
+          }
+        </script>
+    </div>
+
+    <div class="calendar">
+      <h1 class="month">May 2021</h1>
+        <table class="monthdays">
+          <tr class="days">
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+          </tr>
+          <tr class="week1">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+          <tr class="week2">
+            <td id="red">4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+          </tr>
+          <tr class="week3">
+            <td id="red">11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+          </tr>
+          <tr class="week4">
+            <td id="red">18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+          </tr>
+          <tr class="week5">
+            <td id="red">25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+          </tr>
+        </table>
+      </div>
+
+      <fieldset class="permission">
+        <p class="title">
+            <label>Title</label>
+            <br>
+            <input type="text"/>
+        </p>
+        <p class="notes">
+            <label>Notes</label>
+            <br>
+            <input type="text"/>
+        </p>
+
+        <button class="apply"><a>Apply</a></button>
+
+        </fieldset>
+      </form>
+
+  </body>
+</html>
