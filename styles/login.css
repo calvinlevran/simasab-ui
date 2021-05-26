@@ -1,0 +1,90 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8e8e8;
+  font: 100% Helvetica, sans-serif;
+}
+
+.logo .banksinarmas_icon {
+  padding-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-app {
+  background-color: #EC6267;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.header-app .jam {
+  margin-left: 10px;
+}
+
+.header-app .signal {
+  width: 15px;
+  float: right;
+  margin-right: 5px;
+  margin-top: 1px;
+}
+
+.header-app .wifi {
+  width: 15px;
+  float: right;
+  margin-right: 5px;
+  margin-top: 1px;
+}
+
+.header-app .battery {
+  width: 15px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 1px;
+}
+
+.container .user_icon {
+  width: 35px;
+}
+
+.container .password_icon {
+  width: 35px;
+  margin-top: 5px;
+}
+
+.container .login {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.email-box {
+  width: 280px;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  background-color: grey;
+  border: 4px solid #1B396A;
+  border-radius: 10px;
+}
+
+.pass-box {
+  width: 280px;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  background-color: grey;
+  border: 4px solid #1B396A;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=login.css.map */
