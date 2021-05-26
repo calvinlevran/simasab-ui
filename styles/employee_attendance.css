@@ -1,0 +1,307 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 100% Helvetica, sans-serif;
+}
+
+.header-app {
+  background-color: #EC6267;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.header-app .jam {
+  margin-left: 10px;
+}
+
+.header-app .signal {
+  width: 15px;
+  float: right;
+  margin-right: 5px;
+  margin-top: 1px;
+}
+
+.header-app .wifi {
+  width: 15px;
+  float: right;
+  margin-right: 5px;
+  margin-top: 1px;
+}
+
+.header-app .battery {
+  width: 15px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 1px;
+}
+
+.profile {
+  background-color: #F8E8E8;
+  padding: 10px;
+}
+
+.profile .profilePhoto {
+  width: 200px;
+}
+
+.profile .name {
+  font-size: 40px;
+  margin-top: -1px;
+  margin-bottom: -2px;
+  text-shadow: 1px 1px 4px grey;
+}
+
+.profile .position {
+  margin-top: 2px;
+  margin-bottom: -2px;
+  font-size: 12px;
+  text-shadow: 1px 1px 4px grey;
+  font-size: 25px;
+}
+
+.profile .dateTime {
+  font-size: 30px;
+  margin-top: 5px;
+  margin-bottom: -3px;
+}
+
+ul {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+ul li a.active {
+  background: #EC6267;
+  color: black;
+  border-radius: 10px;
+}
+
+ul li a.inactive {
+  background: #FFBCBE;
+  color: black;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 280px) {
+  .profile .profilePhoto {
+    width: 100px;
+  }
+  .profile .name {
+    font-size: 25px;
+    margin-top: -1px;
+    margin-bottom: -2px;
+    text-shadow: 1px 1px 4px grey;
+  }
+  .profile .position {
+    margin-top: 2px;
+    margin-bottom: -2px;
+    font-size: 12px;
+    text-shadow: 1px 1px 4px grey;
+    font-size: 15px;
+  }
+  .profile .dateTime {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: -3px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .profile .profilePhoto {
+    width: 100px;
+  }
+  .profile .name {
+    font-size: 25px;
+    margin-top: -1px;
+    margin-bottom: -2px;
+    text-shadow: 1px 1px 4px grey;
+  }
+  .profile .position {
+    margin-top: 2px;
+    margin-bottom: -2px;
+    font-size: 12px;
+    text-shadow: 1px 1px 4px grey;
+    font-size: 15px;
+  }
+  .profile .dateTime {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: -3px;
+  }
+}
+
+.clock-button {
+  padding-top: 30px;
+}
+
+.button-clock-in {
+  background-color: grey;
+  position: relative;
+  border: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0.6;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.button-clock-in:after {
+  content: "";
+  background: #f1f1f1;
+  border-radius: 30px;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.button-clock-in:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 0.6;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+.button-clock-check {
+  background-color: grey;
+  position: relative;
+  border: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0.6;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.button-clock-check:after {
+  content: "";
+  background: #f1f1f1;
+  border-radius: 30px;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.button-clock-check:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 0.6;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+.button-clock-out {
+  background-color: grey;
+  position: relative;
+  border: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0.6;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.button-clock-out:after {
+  content: "";
+  background: #f1f1f1;
+  border-radius: 30px;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.button-clock-out:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 0.6;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+#clock {
+  padding-left: 10px;
+}
+
+.clock-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=employee_attendance.css.map */

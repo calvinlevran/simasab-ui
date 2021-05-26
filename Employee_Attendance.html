@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simasab</title>
+    <link rel="stylesheet" href="styles/employee_attendance.css" />
+  </head>
+  <body>
+    <div class="content">
+      <header class="header-app">
+        <span class="jam">09:41</span>
+        <!-- <script>
+          var time = new Date();
+          document.getElementById("jam").innerHTML = time.toLocaleTimeString();
+        </script> -->
+        <img src="img/battery-status.png" alt="" class="battery" />
+        <img src="img/wifi.png" alt="" class="wifi" />
+        <img src="img/signal.png" alt="" class="signal" />
+      </header>
+
+      <div class="profile">
+        <img src="img/robert.png" alt="" class="profilePhoto" />
+        <p class="name">Robert Downey</p>
+        <p class="position">Employee</p>
+        <p class="dateTime"><span id="tanggalwaktu"></span></p>
+        <script>
+          var date = new Date();
+          var tahun = date.getFullYear();
+          var hari = date.getDay();
+          var bulan = date.getMonth();
+          var tanggal = date.getDate();
+          var hariarray = new Array(
+            "Sunday,",
+            "Monday,",
+            "Tuesday,",
+            "Wednesday,",
+            "Thursday,",
+            "Friday,",
+            "Saturday,"
+          );
+          var bulanarray = new Array(
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+          );
+          document.getElementById("tanggalwaktu").innerHTML =
+            hariarray[hari] +
+            " " +
+            tanggal +
+            " " +
+            bulanarray[bulan] +
+            " " +
+            tahun;
+        </script>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li><a href="Employee_Attendance.html" class="active">attendance</a></li>
+          <li><a href="Employee_Permission.html" class="inactive">permission</a></li>
+        </ul>
+        <script>
+          const currentLocation = location.href;
+          const menuItem = document.querySelectorAll("a");
+          const menuLength = menuItem.length;
+          for (let i = 0; i < menuLength; i++) {
+            if (menuItem[i].href === currentLocation) {
+              menuItem[i].className = "active";
+            }
+          }
+        </script>
+      </div>
+      <br><br>
+      <input type="time" id="appt" name="appt">
+      <div class="clock-button">
+        <br />
+        <button class="button-clock-in">Clock <br> In</button>
+        <button class="button-clock-check">Clock Check</button>
+        <button class="button-clock-out">Clock Out</button>
+      </div>
+  </body>
+</html>
